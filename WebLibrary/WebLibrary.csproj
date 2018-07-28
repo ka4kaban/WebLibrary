@@ -1,0 +1,187 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
+    <TypeScriptToolsVersion>Latest</TypeScriptToolsVersion>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="bootstrap" Version="4.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.8" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Files not to publish (note that the 'dist' subfolders are re-added below) -->
+    <Content Remove="ClientApp\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="ClientApp\components\BooksContainerSortButton.tsx" />
+    <None Remove="ClientApp\components\BooksContainerSorter.tsx" />
+    <None Remove="ClientApp\components\book\AutorSearch.tsx" />
+    <None Remove="ClientApp\components\book\Book.tsx" />
+    <None Remove="ClientApp\components\book\BookBootstrapCarousel.tsx" />
+    <None Remove="ClientApp\components\book\BookCarousel.tsx" />
+    <None Remove="ClientApp\components\book\BookDescription.tsx" />
+    <None Remove="ClientApp\components\book\BookDownload.tsx" />
+    <None Remove="ClientApp\components\book\BookInfo.tsx" />
+    <None Remove="ClientApp\components\book\BookPreviewCommentsCounter.tsx" />
+    <None Remove="ClientApp\components\book\BooksContainer.tsx" />
+    <None Remove="ClientApp\components\book\BooksSearch.tsx" />
+    <None Remove="ClientApp\components\book\Breadcrumbs.tsx" />
+    <None Remove="ClientApp\components\book\CarouselItem.tsx" />
+    <None Remove="ClientApp\components\book\GenresList.tsx" />
+    <None Remove="ClientApp\components\book\HorizontalMenu.tsx" />
+    <None Remove="ClientApp\components\navMenu\NavMenuItem.tsx" />
+    <None Remove="ClientApp\components\search\CaptionInput.tsx" />
+    <None Remove="ClientApp\components\search\CompletenessInput.tsx" />
+    <None Remove="ClientApp\components\search\GenreInput.tsx" />
+    <None Remove="ClientApp\components\search\HideReadedBookInput.tsx" />
+    <None Remove="ClientApp\components\search\LanguageInput.tsx" />
+    <None Remove="ClientApp\components\search\PageSizeInput.tsx" />
+    <None Remove="ClientApp\components\search\YearInput.tsx" />
+    <None Remove="ClientApp\dist\download.js" />
+    <None Remove="ClientApp\dist\download.min.js" />
+    <None Remove="Content\duna.jpg" />
+    <None Remove="Content\futbool.jpg" />
+    <None Remove="Content\jungleBoy.jpg" />
+    <None Remove="Content\komandorVoiny.jpg" />
+    <None Remove="Content\labirintOtrageniy.jpg" />
+    <None Remove="Content\pexels-photo-46710.jpeg" />
+    <None Remove="Content\proclitiyGorn.jpg" />
+    <None Remove="Content\prorochestvo.jpg" />
+    <None Remove="Content\vladicaSarduora.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="ClientApp\dist\download.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\dist\download.min.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Content\duna.jpg" />
+    <Content Include="Content\futbool.jpg" />
+    <Content Include="Content\jungleBoy.jpg" />
+    <Content Include="Content\komandorVoiny.jpg" />
+    <Content Include="Content\labirintOtrageniy.jpg" />
+    <Content Include="Content\pexels-photo-46710.jpeg" />
+    <Content Include="Content\proclitiyGorn.jpg" />
+    <Content Include="Content\prorochestvo.jpg" />
+    <Content Include="Content\vladicaSarduora.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\components\booksList\BooksListSortButton.tsx">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="ClientApp\components\booksList\BooksListSorter.tsx">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="ClientApp\components\book\BookPreviewCommentsCounter.tsx">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="ClientApp\components\navMenu\NavMenuItem.tsx">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="ClientApp\components\search\AutorSearch.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\GenresList.tsx">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="ClientApp\components\search\GenreInput.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\search\CompletenessInput.tsx">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="ClientApp\components\search\LanguageInput.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\search\YearInput.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\search\PageSizeInput.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\search\HideReadedBookInput.tsx">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="ClientApp\components\search\CaptionInput.tsx">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="ClientApp\components\search\BooksSearch.tsx">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="ClientApp\components\booksList\BooksList.tsx">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="ClientApp\components\Breadcrumbs.tsx">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="ClientApp\components\navMenu\NavMenu.tsx">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="ClientApp\components\carousel\BookBootstrapCarousel.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\carousel\BookCarousel.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\book\BookDescription.tsx">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="ClientApp\components\book\BookDownload.tsx">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="ClientApp\components\book\BookInfo.tsx">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="ClientApp\components\book\Book.tsx">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="ClientApp\components\carousel\CarouselItem.tsx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Update="ClientApp\components\search\AutorSearch.tsx">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </TypeScriptCompile>
+    <TypeScriptCompile Update="ClientApp\components\search\GenreInput.tsx">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </TypeScriptCompile>
+    <TypeScriptCompile Update="ClientApp\components\search\LanguageInput.tsx">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </TypeScriptCompile>
+    <TypeScriptCompile Update="ClientApp\components\search\YearInput.tsx">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </TypeScriptCompile>
+    <TypeScriptCompile Update="ClientApp\components\search\PageSizeInput.tsx">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </TypeScriptCompile>
+  </ItemGroup>
+
+  <Target Name="DebugRunWebpack" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('wwwroot\dist') ">
+    <!-- Ensure Node.js is installed -->
+    <Exec Command="node --version" ContinueOnError="true">
+      <Output TaskParameter="ExitCode" PropertyName="ErrorCode" />
+    </Exec>
+    <Error Condition="'$(ErrorCode)' != '0'" Text="Node.js is required to build and run this project. To continue, please install Node.js from https://nodejs.org/, and then restart your command prompt or IDE." />
+
+    <!-- In development, the dist files won't exist on the first run or when cloning to
+         a different machine, so rebuild them if not already present. -->
+    <Message Importance="high" Text="Performing first-run Webpack build..." />
+    <Exec Command="node node_modules/webpack/bin/webpack.js --config webpack.config.vendor.js" />
+    <Exec Command="node node_modules/webpack/bin/webpack.js" />
+  </Target>
+
+  <Target Name="PublishRunWebpack" AfterTargets="ComputeFilesToPublish">
+    <!-- As part of publishing, ensure the JS resources are freshly built in production mode -->
+    <Exec Command="npm install" />
+    <Exec Command="node node_modules/webpack/bin/webpack.js --config webpack.config.vendor.js --env.prod" />
+    <Exec Command="node node_modules/webpack/bin/webpack.js --env.prod" />
+
+    <!-- Include the newly-built files in the publish output -->
+    <ItemGroup>
+      <DistFiles Include="wwwroot\dist\**; ClientApp\dist\**" />
+      <ResolvedFileToPublish Include="@(DistFiles->'%(FullPath)')" Exclude="@(ResolvedFileToPublish)">
+        <RelativePath>%(DistFiles.Identity)</RelativePath>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      </ResolvedFileToPublish>
+    </ItemGroup>
+  </Target>
+
+</Project>
