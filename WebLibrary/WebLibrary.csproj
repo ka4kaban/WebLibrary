@@ -22,6 +22,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="ClientApp\components\admin\AddAutor.tsx" />
+    <None Remove="ClientApp\components\admin\AddBook.tsx" />
+    <None Remove="ClientApp\components\admin\FileUpload.tsx" />
+    <None Remove="ClientApp\components\autor\Autor.tsx" />
+    <None Remove="ClientApp\components\autor\BookList.tsx" />
     <None Remove="ClientApp\components\BooksContainerSortButton.tsx" />
     <None Remove="ClientApp\components\BooksContainerSorter.tsx" />
     <None Remove="ClientApp\components\book\AutorSearch.tsx" />
@@ -41,7 +46,8 @@
     <None Remove="ClientApp\components\navMenu\NavMenuItem.tsx" />
     <None Remove="ClientApp\components\search\CaptionInput.tsx" />
     <None Remove="ClientApp\components\search\CompletenessInput.tsx" />
-    <None Remove="ClientApp\components\search\GenreInput.tsx" />
+    <None Remove="ClientApp\components\search\GenresInput.tsx" />
+    <None Remove="ClientApp\components\search\GenresList.tsx" />
     <None Remove="ClientApp\components\search\HideReadedBookInput.tsx" />
     <None Remove="ClientApp\components\search\LanguageInput.tsx" />
     <None Remove="ClientApp\components\search\PageSizeInput.tsx" />
@@ -78,6 +84,21 @@
   </ItemGroup>
 
   <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\components\admin\AddAutor.tsx">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="ClientApp\components\admin\FileUpload.tsx">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="ClientApp\components\admin\AddBook.tsx">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="ClientApp\components\autor\BookList.tsx">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="ClientApp\components\autor\Autor.tsx">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </TypeScriptCompile>
     <TypeScriptCompile Include="ClientApp\components\booksList\BooksListSortButton.tsx">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </TypeScriptCompile>
@@ -94,7 +115,10 @@
     <TypeScriptCompile Include="ClientApp\components\GenresList.tsx">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </TypeScriptCompile>
-    <TypeScriptCompile Include="ClientApp\components\search\GenreInput.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\search\GenresList.tsx">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="ClientApp\components\search\GenresInput.tsx" />
     <TypeScriptCompile Include="ClientApp\components\search\CompletenessInput.tsx">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </TypeScriptCompile>
@@ -140,7 +164,7 @@
     <TypeScriptCompile Update="ClientApp\components\search\AutorSearch.tsx">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </TypeScriptCompile>
-    <TypeScriptCompile Update="ClientApp\components\search\GenreInput.tsx">
+    <TypeScriptCompile Update="ClientApp\components\search\GenresInput.tsx">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </TypeScriptCompile>
     <TypeScriptCompile Update="ClientApp\components\search\LanguageInput.tsx">

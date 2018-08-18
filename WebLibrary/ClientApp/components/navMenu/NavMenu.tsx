@@ -23,6 +23,9 @@ export class NavMenu extends React.Component<{}, {}> {
                         <li>
                             <NavMenuItem url="/users" caption="Пользователи" />
                         </li>
+                        <li>
+                            <NavMenuItem url="/admin" caption="Админка" />
+                        </li>
                     </ul>
                 </div>
             </div>

@@ -1,7 +1,7 @@
 ﻿import * as React from 'react';
 import { CaptionInput } from './CaptionInput';
 import { CompletenessInput } from './CompletenessInput';
-import { GenreInput } from './GenreInput';
+import { GenresInput } from './GenresInput';
 import { HideReadedBookInput } from './HideReadedBookInput';
 import { LanguageInput } from './LanguageInput';
 import { PageSizeInput } from './PageSizeInput';
@@ -55,7 +55,7 @@ export class BooksSearch extends React.Component<{
             <div>
                 <h3>Поиск книг</h3>
                 <CaptionInput updateFilter={this.updateFilter.bind(this)} />
-                <GenreInput updateFilter={this.updateFilter.bind(this)} />
+                <GenresInput updateFilter={this.updateFilter.bind(this)} />
                 <LanguageInput updateFilter={this.updateFilter.bind(this)} />
                 <YearInput updateFilter={this.updateFilter.bind(this)} />
                 <PageSizeInput updateFilter={this.updateFilter.bind(this)} />

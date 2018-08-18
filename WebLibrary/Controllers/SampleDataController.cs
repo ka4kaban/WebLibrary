@@ -7,6 +7,7 @@ using Newtonsoft.Json;
 using WebLibrary.Models;
 using System.IO;
 using System.Text;
+using System.Net.Http;
 
 namespace WebLibrary.Controllers
 {
@@ -91,6 +92,42 @@ namespace WebLibrary.Controllers
             }
             return SortBooks(Example.SampleBooks, filterObj);
         }
+        [HttpPost("[action]")]
+        public void AddBook([FromBody] CreateUserViewModel m)
+        {
+            //string book1 = book;
+            //var users = GetData(selectedRole).Select(p => new {
+            //    FirstName = p.FirstName,
+            //    LastName = p.LastName,
+            //    Role = Enum.GetName(typeof(Role), p.Role)
+            //});
+        }
+        public class CreateUserViewModel
+        {
+            public int Id { set; get; }
+            public string Name { set; get; }
+            public List<TagViewModel> Tags { set; get; }
+        }
+        public class TagViewModel
+        {
+            public int Id { set; get; }
+            public string Code { set; get; }
+        }
+        public class Customer
+        {
+            public string contact_name;
+            public string company_name;
+        }
+        //[HttpPost("[action]")]
+        //public void AddBook() {
+
+        //    //var users = GetData(selectedRole).Select(p => new {
+        //    //    FirstName = p.FirstName,
+        //    //    LastName = p.LastName,
+        //    //    Role = Enum.GetName(typeof(Role), p.Role)
+        //    //});
+        //}
+
         public class BooksFilter
         {
             [JsonProperty("captionAutor")]
