@@ -1,0 +1,165 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TypeScriptToolsVersion>2.8</TypeScriptToolsVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="ClientApp\components\admin\AddAutor.jsx" />
+    <None Remove="ClientApp\components\admin\AddBook.jsx" />
+    <None Remove="ClientApp\components\admin\FileUpload.jsx" />
+    <None Remove="ClientApp\components\autor\Autor.jsx" />
+    <None Remove="ClientApp\components\autor\BookList.jsx" />
+    <None Remove="ClientApp\components\booksList\BooksList.jsx" />
+    <None Remove="ClientApp\components\booksList\BooksListSortButton.jsx" />
+    <None Remove="ClientApp\components\booksList\BooksListSorter.jsx" />
+    <None Remove="ClientApp\components\book\Book.jsx" />
+    <None Remove="ClientApp\components\book\BookDescription.jsx" />
+    <None Remove="ClientApp\components\book\BookDownload.jsx" />
+    <None Remove="ClientApp\components\book\BookInfo.jsx" />
+    <None Remove="ClientApp\components\book\BookPreviewCommentsCounter.jsx" />
+    <None Remove="ClientApp\components\Breadcrumbs.jsx" />
+    <None Remove="ClientApp\components\carousel\BookBootstrapCarousel.jsx" />
+    <None Remove="ClientApp\components\carousel\BookCarousel.jsx" />
+    <None Remove="ClientApp\components\carousel\CarouselItem.jsx" />
+    <None Remove="ClientApp\components\GenresList.jsx" />
+    <None Remove="ClientApp\components\navMenu\NavMenu.jsx" />
+    <None Remove="ClientApp\components\navMenu\NavMenuItem.jsx" />
+    <None Remove="ClientApp\components\search\AutorSearch.jsx" />
+    <None Remove="ClientApp\components\search\BooksSearch.jsx" />
+    <None Remove="ClientApp\components\search\CaptionInput.jsx" />
+    <None Remove="ClientApp\components\search\CompletenessInput.jsx" />
+    <None Remove="ClientApp\components\search\GenresInput.jsx" />
+    <None Remove="ClientApp\components\search\GenresList.jsx" />
+    <None Remove="ClientApp\components\search\HideReadedBookInput.jsx" />
+    <None Remove="ClientApp\components\search\LanguageInput.jsx" />
+    <None Remove="ClientApp\components\search\PageSizeInput.jsx" />
+    <None Remove="ClientApp\components\search\YearInput.jsx" />
+    <None Remove="ClientApp\dist\download.js" />
+    <None Remove="ClientApp\dist\download.min.js" />
+    <None Remove="Content\duna.jpg" />
+    <None Remove="Content\futbool.jpg" />
+    <None Remove="Content\jungleBoy.jpg" />
+    <None Remove="Content\komandorVoiny.jpg" />
+    <None Remove="Content\labirintOtrageniy.jpg" />
+    <None Remove="Content\pexels-photo-46710.jpeg" />
+    <None Remove="Content\proclitiyGorn.jpg" />
+    <None Remove="Content\prorochestvo.jpg" />
+    <None Remove="Content\vladicaSarduora.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="ClientApp\dist\download.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="ClientApp\dist\download.min.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Content\duna.jpg" />
+    <Content Include="Content\futbool.jpg" />
+    <Content Include="Content\jungleBoy.jpg" />
+    <Content Include="Content\komandorVoiny.jpg" />
+    <Content Include="Content\labirintOtrageniy.jpg" />
+    <Content Include="Content\pexels-photo-46710.jpeg" />
+    <Content Include="Content\proclitiyGorn.jpg" />
+    <Content Include="Content\prorochestvo.jpg" />
+    <Content Include="Content\vladicaSarduora.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.8" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\components\admin\AddAutor.jsx">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="ClientApp\components\admin\AddBook.jsx">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="ClientApp\components\admin\FileUpload.jsx">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="ClientApp\components\autor\Autor.jsx">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="ClientApp\components\autor\BookList.jsx">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="ClientApp\components\booksList\BooksList.jsx">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="ClientApp\components\booksList\BooksListSortButton.jsx">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="ClientApp\components\booksList\BooksListSorter.jsx">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="ClientApp\components\book\Book.jsx">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="ClientApp\components\book\BookDescription.jsx">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="ClientApp\components\book\BookDownload.jsx">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="ClientApp\components\book\BookInfo.jsx">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="ClientApp\components\book\BookPreviewCommentsCounter.jsx">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="ClientApp\components\Breadcrumbs.jsx">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="ClientApp\components\carousel\BookBootstrapCarousel.jsx" />
+    <TypeScriptCompile Include="ClientApp\components\carousel\BookCarousel.jsx" />
+    <TypeScriptCompile Include="ClientApp\components\carousel\CarouselItem.jsx" />
+    <TypeScriptCompile Include="ClientApp\components\GenresList.jsx">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="ClientApp\components\navMenu\NavMenu.jsx">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="ClientApp\components\navMenu\NavMenuItem.jsx">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="ClientApp\components\search\AutorSearch.jsx">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="ClientApp\components\search\BooksSearch.jsx">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="ClientApp\components\search\CaptionInput.jsx">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="ClientApp\components\search\CompletenessInput.jsx">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="ClientApp\components\search\GenresInput.jsx">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="ClientApp\components\search\GenresList.jsx">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="ClientApp\components\search\HideReadedBookInput.jsx">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="ClientApp\components\search\LanguageInput.jsx">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="ClientApp\components\search\PageSizeInput.jsx">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="ClientApp\components\search\YearInput.jsx">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </TypeScriptCompile>
+  </ItemGroup>
+
+</Project>

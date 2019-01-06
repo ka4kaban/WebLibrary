@@ -1,0 +1,1 @@
+D:\work\WebLibrary\WebLib\obj\Debug\netcoreapp2.0\WebLib.csprojAssemblyReference.cache

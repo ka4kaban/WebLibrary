@@ -1,0 +1,12 @@
+D:\work\WebLibrary\EReadingLib\bin\Debug\EReadingLib.dll.config
+D:\work\WebLibrary\EReadingLib\bin\Debug\EReadingLib.dll
+D:\work\WebLibrary\EReadingLib\bin\Debug\EReadingLib.pdb
+D:\work\WebLibrary\EReadingLib\bin\Debug\EntityFramework.dll
+D:\work\WebLibrary\EReadingLib\bin\Debug\EntityFramework.SqlServer.dll
+D:\work\WebLibrary\EReadingLib\bin\Debug\EntityFramework.xml
+D:\work\WebLibrary\EReadingLib\bin\Debug\EntityFramework.SqlServer.xml
+D:\work\WebLibrary\EReadingLib\obj\Debug\EReadingLib.csprojAssemblyReference.cache
+D:\work\WebLibrary\EReadingLib\obj\Debug\EReadingLib.csproj.CoreCompileInputs.cache
+D:\work\WebLibrary\EReadingLib\obj\Debug\EReadingLib.csproj.CopyComplete
+D:\work\WebLibrary\EReadingLib\obj\Debug\EReadingLib.dll
+D:\work\WebLibrary\EReadingLib\obj\Debug\EReadingLib.pdb
