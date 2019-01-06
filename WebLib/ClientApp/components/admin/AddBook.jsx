@@ -2,7 +2,7 @@
 //import { BookPreview } from './BookPreview';
 //import * as BookStore from '../../store/books';
 
-export class AddBook extends React.Component<{}, {}> {
+export class AddBook extends React.Component {
     //constructor() {
     //    this.state
     //}
@@ -22,7 +22,7 @@ export class AddBook extends React.Component<{}, {}> {
             body: JSON.stringify(/*{ a: 1, b: 'Textual content' }*/model)
         });
             //.then(function (date) {
-            //    debugger
+            //    
             //});
 
         //.then(res => res.json())
@@ -53,7 +53,7 @@ export class AddBook extends React.Component<{}, {}> {
         reader.readAsDataURL(blobFile);
     }
    
-    public render() {
+    render() {
         return <div className="book island card">
             <h1 style={{ textAlign: "center" }}>Загрузка файла</h1>
             <div className="row">

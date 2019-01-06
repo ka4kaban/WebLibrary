@@ -1,12 +1,13 @@
 ﻿import * as React from 'react';
 import { fetch } from 'domain-task';
 
-export class BookDownload extends React.Component<{
-    bookId: number,
-    bookCaption: string
-}, {}> {
+//export class BookDownload extends React.Component<{
+//    bookId: number,
+//    bookCaption: string
+//}, {}> {
+export class BookDownload extends React.Component {
     downloadFile() {
-        let download: any = require('../../dist/download.min');
+        let download = require('../../dist/download.min');
         var thos = this;
         let fetchTask = fetch(`api/SampleData/GetBookTextByID?bookId=${this.props.bookId}`)
             .then(function (resp) {
@@ -15,7 +16,7 @@ export class BookDownload extends React.Component<{
                 download(blob, thos.props.bookCaption + ".txt", "text/plain");
             });
     }
-    public render() {
+    render() {
         let groupName = "downloadFormat" + this.props.bookId;
         return <div>
             <div>

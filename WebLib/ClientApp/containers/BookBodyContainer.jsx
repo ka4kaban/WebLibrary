@@ -11,12 +11,13 @@ type BooksContainerProps =
     & typeof BookBodyState.actionCreators
     & RouteComponentProps<{ bookId: number }>;
 
-class BookBodyContainer extends React.Component<BooksContainerProps, {}> {
+//class BookBodyContainer extends React.Component<BooksContainerProps, {}> {
+class BookBodyContainer extends React.Component {
     componentWillMount() {
         this.props.getBookTextByID(this.props.match.params.bookId);
     }
    
-    public render() {
+    render() {
         return <div>
             <span>themes switcher</span>
             <div className='row island'>

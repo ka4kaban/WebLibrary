@@ -3,7 +3,7 @@
 //import * as BookStore from '../../store/books';
 
 //export class BookInfo extends React.Component<BookStore.BookInfo, {}> {
-//    public render() {
+//    render() {
 //        return <div>
 //            <table>
 //                <tbody>

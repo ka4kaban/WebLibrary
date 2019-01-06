@@ -7,20 +7,21 @@ import { LanguageInput } from './LanguageInput';
 import { PageSizeInput } from './PageSizeInput';
 import { YearInput } from './YearInput';
 
-type BooksSearchState = {
-    captionAutor?: string,
-    genre?: string,
-    language?: string,
-    minPageCount?: number,
-    maxPageCount?: number,
-    minYear?: number,
-    maxYear?: number
-}
+//type BooksSearchState = {
+//    captionAutor?: string,
+//    genre?: string,
+//    language?: string,
+//    minPageCount?: number,
+//    maxPageCount?: number,
+//    minYear?: number,
+//    maxYear?: number
+//}
 
-export class BooksSearch extends React.Component<{
-    requestBooks: any
-}, BooksSearchState> {
-    constructor(props: any) {
+//export class BooksSearch extends React.Component<{
+//    requestBooks
+//}, BooksSearchState>
+export class BooksSearch extends React.Component{
+    constructor(props) {
         super(props);
         this.state = {
             captionAutor: undefined,
@@ -32,25 +33,25 @@ export class BooksSearch extends React.Component<{
             maxYear: undefined
         }
     }
-    filterBooks = (newState: any) => {
+    filterBooks = (newState) => {
         this.props.requestBooks(JSON.stringify(newState || this.state));
     }
-    updateFilter(evt: any) {
-        debugger
-        let newState: any = {};
+    updateFilter(evt) {
+        
+        let newState = {};
         Object.assign(newState, this.state);
         newState[evt.target.name] = evt.target.value;
         this.setState(newState);
     }
-    componentWillUpdate(nextProps: any, nextState: any) {
+    componentWillUpdate(nextProps, nextState) {
         this.filterBooks(nextState);
     }
-    updateFilterByEnterKeyPress(evt: any) {
+    updateFilterByEnterKeyPress(evt) {
         if (evt.key === 'Enter') {
             this.updateFilter(evt);
         }
     }
-    public render() {
+    render() {
         return <div>
             <div>
                 <h3>Поиск книг</h3>

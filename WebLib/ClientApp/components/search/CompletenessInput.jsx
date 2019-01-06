@@ -1,9 +1,10 @@
 ﻿import * as React from 'react';
 
-export class CompletenessInput extends React.Component<{
-    updateFilter: any
-}, {}> {
-    public render() {
+//export class CompletenessInput extends React.Component<{
+//    updateFilter
+//}, {}> {
+export class CompletenessInput extends React.Component {
+    render() {
         return <div className="search-item">
             <div>Законченность</div>
             <div className="dropdown menu-justify" >

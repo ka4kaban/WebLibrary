@@ -1,9 +1,10 @@
 ﻿import * as React from 'react';
 
-export class YearInput extends React.Component<{
-    updateFilter: any
-}, {}> {
-    public render() {
+//export class YearInput extends React.Component<{
+//    updateFilter
+//}, {}> {
+export class YearInput extends React.Component {
+    render() {
         return <div className="search-item">
             <div>Год:</div>
             <div className="row">

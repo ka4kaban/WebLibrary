@@ -2,8 +2,8 @@
 //import { BookPreview } from './BookPreview';
 //import * as BookStore from '../../store/books';
 
-export class AddAutor extends React.Component<{}, {}> {
-    public render() {
+export class AddAutor extends React.Component {
+    render() {
         return <div className="book island card">
             <h1 style={{ textAlign: "center" }}>Добавление автора</h1>
               <div className="row">

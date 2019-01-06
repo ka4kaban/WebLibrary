@@ -3,8 +3,9 @@ import { RouteComponentProps } from 'react-router-dom';
 import { Breadcrumbs } from './Breadcrumbs';
 import { NavMenu } from './navMenu/NavMenu';
 
-export class Home extends React.Component<RouteComponentProps<{}>, {}> {
-    public render() {
+//export class Home extends React.Component<RouteComponentProps<{}>, {}> {
+export class Home extends React.Component {
+    render() {
         return <div>
             <span>themes switcher</span>
             <div className='row island'>

@@ -1,7 +1,7 @@
 ﻿import * as React from 'react';
 
-export class BootstrapBookCarousel extends React.Component<{}, {}> {
-    public render() {
+export class BootstrapBookCarousel extends React.Component {
+    render() {
         return <div id="myCarousel" className="carousel slide" data-ride="carousel" style={{ width: "200px" }}>
             <ol className="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" className=""></li>

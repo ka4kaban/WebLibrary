@@ -2,13 +2,14 @@
 import { BooksListSortButton } from './BooksListSortButton';
 import * as BooksStore from '../../store/Books';
 
-export class BooksListSorter extends React.Component<{
-    sortBooks: typeof BooksStore.actionCreators.sortBooks
-}, {
-        sortType: BooksStore.BooksSortType
-    }> {
+//export class BooksListSorter extends React.Component<{
+//    sortBooks: typeof BooksStore.actionCreators.sortBooks
+//}, {
+//        sortType: BooksStore.BooksSortType
+//    }> {
 
-    constructor(props: any) {
+export class BooksListSorter extends React.Component {
+    constructor(props) {
         super(props);
         this.state = {
             sortType: BooksStore.BooksSortType.Date
@@ -22,18 +23,18 @@ export class BooksListSorter extends React.Component<{
             { name: BooksStore.BooksSortType.Comments, caption: "Комментарии" }
         ];
     }
-    onButtonClick(value: any) {
+    onButtonClick(value) {
         this.setState({
             sortType: value
         });
         this.props.sortBooks(value);
     }
-    private renderButtons() {
+    renderButtons() {
         return this.getSortTypes().map((btn, index) =>
             <BooksListSortButton key={index} sortTypeCaption={btn.caption} onButtonClick={this.onButtonClick.bind(this, btn.name)} isActive={this.state.sortType === btn.name} />
         );
     }
-    public render() {
+    render() {
         return <div className="booksContainerSorter">
             <div>плитка/список</div>
             <span className="sortCaption">Сортировать по:</span>

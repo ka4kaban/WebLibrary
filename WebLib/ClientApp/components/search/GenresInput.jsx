@@ -1,19 +1,21 @@
 ﻿import * as React from 'react';
 import { GenresList } from './GenresList';
 
-export class GenresInput extends React.Component<{
-    updateFilter: any
-}, {}> {
-    updateInput(evt: any) {
-        debugger
-        (this.refs.genre as HTMLElement).innerHTML = evt.target.innerText;
+//export class GenresInput extends React.Component<{
+//    updateFilter
+//}, {}> {
+export class GenresInput extends React.Component{
+    updateInput(evt) {
+        
+        //(this.refs.genre as HTMLElement).innerHTML = evt.target.innerText;
+        this.refs.genre.innerHTML = evt.target.innerText;
     }
-    onChange(evt: any) {
+    onChange(evt) {
         //this.props.updateFilter
-        //debugger
+        //
         //(this.refs.genre as HTMLElement).innerHTML = evt.target.innerText;
     }
-    public render() {
+    render() {
         return <div className="search-item" >
 
             <button type="button" className="btn btn-primary btn-lg " data-toggle="modal" data-target="#myModal">

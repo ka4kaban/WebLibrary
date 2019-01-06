@@ -35,7 +35,7 @@ class Contract extends React.Component {
     render() {
         //let contract = this.props.contract || {};
         if (this.props.contract)
-            debugger
+            
         //let { registrationNumber, sum, contractCreateDate, createDateTime, fulfillmentDate } = contract;
         return (<div id="content">
             <div className="row clearfix">

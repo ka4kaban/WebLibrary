@@ -1,10 +1,11 @@
 ﻿import * as React from 'react';
 
-export class BookAssessment extends React.Component<{
-    average: number,
-    assessmentsCount: number
-}, {}> {
-    public render() {
+//export class BookAssessment extends React.Component<{
+//    average: number,
+//    assessmentsCount: number
+//}, {}> {
+export class BookAssessment extends React.Component{
+    render() {
         return <div>
             Оценка
             <br />

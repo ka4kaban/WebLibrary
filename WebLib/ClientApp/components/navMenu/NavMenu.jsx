@@ -2,8 +2,8 @@
 //import { NavLink } from 'react-router-dom';
 import { NavMenuItem } from './NavMenuItem';
 
-export class NavMenu extends React.Component<{}, {}> {
-    public render() {
+export class NavMenu extends React.Component {
+    render() {
         return <nav className="navbar navbar-brand">
             <div className="container-fluid">
                 <div id="navbar" className="navbar-collapse collapse">

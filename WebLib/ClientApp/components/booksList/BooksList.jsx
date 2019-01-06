@@ -4,12 +4,13 @@ import { Book } from '../book/Book';
 import { BooksListSorter } from './BooksListSorter';
 import * as BooksStore from '../../store/Books';
 
-export class BooksList extends React.Component<{
-    books: BooksStore.BookInfo[],
-    sortBooks: typeof BooksStore.actionCreators.sortBooks
-}, {}> {
-    private renderBooks() {
-        let resArr: any = [];
+//export class BooksList extends React.Component<{
+//    books: BooksStore.BookInfo[],
+//    sortBooks: typeof BooksStore.actionCreators.sortBooks
+//}, {}> {
+export class BooksList extends React.Component{
+    renderBooks() {
+        let resArr = [];
         if (!this.props.books)
             return resArr;
         for (let i = 0; i < this.props.books.length; i++) {
@@ -21,7 +22,7 @@ export class BooksList extends React.Component<{
         }
         return resArr;
     }
-    public render() {
+    render() {
         return <div>
             <div className='row island'>
                 <BooksListSorter sortBooks={this.props.sortBooks} />

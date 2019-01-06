@@ -1,9 +1,10 @@
 ﻿import * as React from 'react';
 
-export class LanguageInput extends React.Component<{
-    updateFilter: any
-}, {}> {
-    public render() {
+//export class LanguageInput extends React.Component<{
+//    updateFilter
+//}, {}> {
+export class LanguageInput extends React.Component {
+    render() {
         return <div className="search-item">
             <div>Язык</div>
             <div className="dropdown menu-justify" >

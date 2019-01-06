@@ -7,8 +7,9 @@ import { BookDescription } from './BookDescription';
 import { BookPreviewCommentsCounter } from './BookPreviewCommentsCounter';
 
 
-export class BookPreview extends React.Component<BookStore.BookInfo, {}> {
-    public render() {
+//export class BookPreview extends React.Component<BookStore.BookInfo, {}> {
+export class BookPreview extends React.Component {
+    render() {
         return <div>
             <table style={{ width: "100%" }}>
                 <tbody>

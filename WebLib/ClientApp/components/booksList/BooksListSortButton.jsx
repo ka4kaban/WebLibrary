@@ -1,10 +1,11 @@
 ﻿import * as React from 'react';
 
-export class BooksListSortButton extends React.Component<{
-    sortTypeCaption: string,
-    onButtonClick: any,
-    isActive: boolean
-}, {}> {
+//export class BooksListSortButton extends React.Component<{
+//    sortTypeCaption: string,
+//    onButtonClick,
+//    isActive: boolean
+//}, {}> {
+export class BooksListSortButton extends React.Component {
     getButtonClassName = () => {
         return "btn dropdown-toggle " + (this.props.isActive ? "btn-primary" : "btn-default");
     }
@@ -14,7 +15,7 @@ export class BooksListSortButton extends React.Component<{
             {this.props.sortTypeCaption}
         </button>
     }
-    public render() {
+    render() {
         return <div className="sortBtn">
             <div className="dropdown" style={{ display: "inline" }}>
                 {this.renderButton()}

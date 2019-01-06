@@ -2,10 +2,11 @@
 import { CarouselItem } from './Carouselitem';
 import * as BooksStore from '../../store/Books';
 
-export class BookCarousel extends React.Component<{
-    books: BooksStore.BookInfo[],
-}, { startIndex: number }> {
-    constructor(props: any) {
+//export class BookCarousel extends React.Component<{
+//    books: BooksStore.BookInfo[],
+//}, { startIndex: number }> {
+export class BookCarousel extends React.Component {
+    constructor(props) {
         super(props);
         this.state = {
             startIndex: 0
@@ -19,7 +20,7 @@ export class BookCarousel extends React.Component<{
         }
         return result;
     }
-    public render() {
+    render() {
         return <div >
             <div> Бестцеллеры месяца: </div>
             <div className="carousel" style={{ width: "100%" }}>

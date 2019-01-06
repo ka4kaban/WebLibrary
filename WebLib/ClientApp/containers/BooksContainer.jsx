@@ -14,13 +14,14 @@ type BooksContainerProps =
     & typeof BooksState.actionCreators
     & RouteComponentProps<{ startDateIndex: string }>;
 
-class BooksContainer extends React.Component<BooksContainerProps, {}> {
+//class BooksContainer extends React.Component<BooksContainerProps, {}> {
+class BooksContainer extends React.Component {
     componentWillMount() {
         this.props.requestBooks("");
         this.props.requestCarouselBooks();
     }
 
-    public render() {
+    render() {
         return <div>
             <span>themes switcher</span>
             <div className='row island'>

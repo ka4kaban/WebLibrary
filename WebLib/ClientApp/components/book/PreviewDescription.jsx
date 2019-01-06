@@ -2,7 +2,8 @@
 import { BookAssessment } from './BookAssessment';
 import * as BookStore from '../../store/books';
 
-export class PreviewDescription extends React.Component<BookStore.BookInfo, {}> {
+//export class PreviewDescription extends React.Component<BookStore.BookInfo, {}> {
+export class PreviewDescription extends React.Component{
     renderBookAssessment() {
         if (this.props.assessment) {
             return <BookAssessment average={this.props.assessment.average} assessmentsCount={this.props.assessment.assessmentsCount} />
@@ -10,7 +11,7 @@ export class PreviewDescription extends React.Component<BookStore.BookInfo, {}> 
         return null;
     }
 
-    public render() {
+    render() {
         var options = { year: 'numeric', month: 'long', day: 'numeric' };
 
         return <div className="previewGroup">

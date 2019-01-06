@@ -14,13 +14,14 @@ import { AddBook } from '../components/admin/AddBook';
 //    & typeof BooksState.actionCreators
 //    & RouteComponentProps<{ startDateIndex: string }>;
 
-export default class AdminContainer extends React.Component<RouteComponentProps<{ }>, {}> {
+//export default class AdminContainer extends React.Component<RouteComponentProps<{}>, {}> {
+export default class AdminContainer extends React.Component {
     //componentWillMount() {
     //    this.props.requestBooks("");
     //    this.props.requestCarouselBooks();
     //}
 
-    public render() {
+    render() {
         
         return <div>
             <AddBook />
